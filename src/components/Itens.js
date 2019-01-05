@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
-import { Text } from 'react-native';
+import { Image } from 'react-native';
 
 export default class Itens extends Component {
         render() {
             return(
-                <Text>ITEM 1</Text>
+                <Image uri={ this.uri } />
         )
     }
 }

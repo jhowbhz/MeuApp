@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import { AppRegistry } from 'react-native';
+import { AppRegistry, StyleSheet, View } from 'react-native';
 import ListaItens from './src/components/ListaItens';
 
 export default class MeuApp extends Component {
@@ -12,9 +12,17 @@ export default class MeuApp extends Component {
         const teste = {teste:'pqp, deu certo'};
         console.log(teste);
         return(
-            <ListaItens />
+            <View style={style.container}>
+                <ListaItens />
+            </View>
         )
     }
 }
 
 AppRegistry.registerComponent('MeuApp', () => MeuApp);
+
+const style = StyleSheet.create({
+    container: {
+        padding: 10,
+    },
+})
